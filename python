@@ -1,0 +1,28 @@
+ import random  # sayı tahmin oyunu baaska cözüm
+
+num = random.randint(1,100)
+print(num)
+
+right = 3
+
+while right > 0:
+  guess = int(input("please enter your guess:"))
+  right -= 1
+  if  guess == num:
+    print("you wonn:)")
+    break
+  elif right == 0:
+    print(f"game over babay answer : {num}")
+    break
+
+  elif guess > num:
+    print("daha küçük sayı gir gurban")
+  elif guess < num:
+    print("daha büyük sayı gir gurban")
+
+
+
+
+
+
+
